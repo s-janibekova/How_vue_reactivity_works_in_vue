@@ -10,6 +10,7 @@ class Dep {
   depend() {
     if (target && !this.subscribers.includes(target)) {
       // Only if there is a target & it's not already subscribed
+      
       this.subscribers.push(target);
     }
   }
